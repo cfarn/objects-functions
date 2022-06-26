@@ -45,11 +45,25 @@ const cat = {
 // compare(1, 5)
 
 // ******05 - Add Up******
-const addUp = (num) => {
-    let total = 0
-    for(let i = 0; i <= num; i++) {
-        total += i
-    }
-    log(total)
+// const addUp = (num) => {
+//     let total = 0
+//     for(let i = 0; i <= num; i++) {
+//         total += i
+//     }
+//     log(total)
+// }
+// addUp(12)
+
+// ******06 - Time******
+const format =(num) => {
+    let hour = Math.floor(num/(60*60))
+    num -= hour * (60*60)
+    let min = Math.floor(num/(60))
+    num -= min * (60)
+
+    // log(min, hour, num)
+    log(`${hour}:${min}:${num}`)
+    
 }
-addUp(12)
+format(3700)
+
