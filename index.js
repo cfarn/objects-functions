@@ -56,14 +56,13 @@ const cat = {
 
 // ******06 - Time******
 const format =(num) => {
-    let hour = Math.floor(num/(60*60))
-    num -= hour * (60*60)
+    let hour = Math.floor(num/(3600))
+    num -= hour * (3600)
     let min = Math.floor(num/(60))
     num -= min * (60)
 
     // log(min, hour, num)
     log(`${hour}:${min}:${num}`)
-    
 }
-format(3700)
+format(5400)
 
